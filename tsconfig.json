@@ -1,0 +1,26 @@
+{
+  "ts-node": {
+        // Do not forget to `npm i -D tsconfig-paths`
+        "require": ["tsconfig-paths/register"]
+    },
+    
+    "compilerOptions": {
+    "target": "es5",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "app/*":["./src/app/*"],
+      "core/*":["./src/core/*"]
+    },
+    "esModuleInterop": true,
+    "strict": true
+  }
+}
