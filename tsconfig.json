@@ -18,7 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "app/*":["./src/app/*"],
-      "core/*":["./src/core/*"]
+      "core/*":["./src/core/*"],
+      "config/*":["./src/config/*"]
     },
     "esModuleInterop": true,
     "strict": true

@@ -3,7 +3,6 @@ import { Routes } from "./types";
 export class Router {
   // router list
   private routes: Routes[] = [];
-
   private static instance: Router;
 
   // get instance
@@ -82,7 +81,7 @@ export class Router {
       const requestMethod = route.method.toLocaleLowerCase();
       const requestMethodFunc = server[requestMethod].bind(server);
 
-      requestMethodFunc(route.path, route.handler);
+      requestMethodFunc("/api/v1" + route.path, route.handler);
     });
   }
 
